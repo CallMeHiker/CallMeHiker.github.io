@@ -97,16 +97,10 @@
 <meta property="og:site_name" content="Hike的博客">
 <meta property="og:description" content="Core Bluetooth关于Core Bluetooth概述Core Bluetooth framework 提供了iOS和Mac app 与蓝牙设备交互的类。例如，你的app可以发现，检测外围蓝牙设备并与之通信。Mac和iOS设备也可以充当蓝牙外围设备，保存数据到其他设备，包括Mac 和 iOS 设备。蓝牙无线技术基于蓝牙4.0规格，Core Bluetooth framework抽象了蓝牙">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://hiker.com/2018/09/27/关于蓝牙开发/0B048E1D-573B-4E41-B085-5390C15C4359.png">
-<meta property="og:image" content="http://hiker.com/2018/09/27/关于蓝牙开发/695E12FC-0F86-4EC0-A65F-CA30E430BBD5.png">
-<meta property="og:image" content="http://hiker.com/2018/09/27/关于蓝牙开发/BC8C1E79-5583-424A-BB34-70344CF59B2B.png">
-<meta property="og:image" content="http://hiker.com/2018/09/27/关于蓝牙开发/4C0EBC6F-2FD3-431C-A181-A8DEAE88D169.png">
-<meta property="og:image" content="http://hiker.com/2018/09/27/关于蓝牙开发/2066F666-ED02-4F5A-B8E7-A5765E62468E.png">
-<meta property="og:updated_time" content="2018-09-27T09:31:16.812Z">
+<meta property="og:updated_time" content="2018-09-27T09:55:39.936Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于蓝牙开发">
 <meta name="twitter:description" content="Core Bluetooth关于Core Bluetooth概述Core Bluetooth framework 提供了iOS和Mac app 与蓝牙设备交互的类。例如，你的app可以发现，检测外围蓝牙设备并与之通信。Mac和iOS设备也可以充当蓝牙外围设备，保存数据到其他设备，包括Mac 和 iOS 设备。蓝牙无线技术基于蓝牙4.0规格，Core Bluetooth framework抽象了蓝牙">
-<meta name="twitter:image" content="http://hiker.com/2018/09/27/关于蓝牙开发/0B048E1D-573B-4E41-B085-5390C15C4359.png">
 
 
 
@@ -353,16 +347,11 @@
 <h3 id="通过最佳实践来达到更好的用户体验"><a href="#通过最佳实践来达到更好的用户体验" class="headerlink" title="通过最佳实践来达到更好的用户体验"></a>通过最佳实践来达到更好的用户体验</h3><p>Core Bluetooth framework提供了跨越蓝牙通用功能的控制，通过最佳实践达到最好的用户体验。例如你使用无线电来传输信号来实现中心外围角色，因为你的设备的无线电与其他形式的无线通信共享而且无线电发送的使用会非常耗电，所以你需要尽可能少的使用无线电发送。</p>
 <h2 id="Core-Bluetooth-概览"><a href="#Core-Bluetooth-概览" class="headerlink" title="Core Bluetooth 概览"></a>Core Bluetooth 概览</h2><p>需要注意的是：iOS10之后需要在info.plist文件中设置NSBluetoothPeripheralUsageDescription以访问蓝牙权限，否则程序会崩溃。</p>
 <p>###中心设备和外围设备在通信中负责的任务<br>外围通过广播一个广告包数据，改数据包含有外围提供的一些有用的信息例如名称，基本功能。另一方面，中心设备则扫描和监听外围设备，中心设备能够请求连接发现的外围。</p>
-<p>####外围设备的数据构造<br>连接外围设备的目的是为了交互数据，在进行交互前，需要明白外围是如何组织数据的。外围设备可能包含一个或多个服务，或提供有关其连接信号强度的有用信息。服务是一些数据和实现设备（或设备的一部分）相关功能和特性的行为的集合。例如心率探测器的服务是为了显示传感器的心率数据。服务本身由特征或包含的服务(即对其他服务的引用)组成，特征（characteristic）提供了服务（service）的进一步的细节。例如：</p>
-<p><img src="0B048E1D-573B-4E41-B085-5390C15C4359.png" alt="image"></p>
+<p>####外围设备的数据构造<br>连接外围设备的目的是为了交互数据，在进行交互前，需要明白外围是如何组织数据的。外围设备可能包含一个或多个服务，或提供有关其连接信号强度的有用信息。服务是一些数据和实现设备（或设备的一部分）相关功能和特性的行为的集合。例如心率探测器的服务是为了显示传感器的心率数据。服务本身由特征或包含的服务(即对其他服务的引用)组成，特征（characteristic）提供了服务（service）的进一步的细节。</p>
 <h3 id="核心蓝牙库里如何表征中心，外围及外围数据"><a href="#核心蓝牙库里如何表征中心，外围及外围数据" class="headerlink" title="核心蓝牙库里如何表征中心，外围及外围数据"></a>核心蓝牙库里如何表征中心，外围及外围数据</h3><h4 id="中心设备探索并与外围设备进行数据交互-本地为中心，远程为外围"><a href="#中心设备探索并与外围设备进行数据交互-本地为中心，远程为外围" class="headerlink" title="中心设备探索并与外围设备进行数据交互(本地为中心，远程为外围)"></a>中心设备探索并与外围设备进行数据交互(本地为中心，远程为外围)</h4><p>当中心与外围设备建立连接成功后，可以发现全部的服务和特征，中心设备也可以通过读写数据与外围设备实现交互。在中心设备这边，一个中心设备由 CBCentralManager 来表征。这个对象用来管理发现和连接外围设备（用CBPeripheral对象来表征），包括扫描，发现，连接外围设备。</p>
-<p><img src="695E12FC-0F86-4EC0-A65F-CA30E430BBD5.png" alt="image"></p>
 <p>当你与外围设备（CBPeripheral对象）进行数据交互时，你处理的是他的服务（services）和特征（characteristics）。服务用CBService 对象来表征，特征用 CBCharacteristic 对象来表征。</p>
-<p><img src="BC8C1E79-5583-424A-BB34-70344CF59B2B.png" alt="image"></p>
 <h4 id="本地设备作为外围，远程是中心设备"><a href="#本地设备作为外围，远程是中心设备" class="headerlink" title="本地设备作为外围，远程是中心设备"></a>本地设备作为外围，远程是中心设备</h4><p>iOS6， macOS 10.9之后，设备可以作为外围，实现蓝牙外围设备的行为与外界通信。给其他设备提供数据。ios或macOS充当外围设备时，用 CBPeripheralManager 对象表征。改对象来管理公开服务和特征（从设备数据库里面获取），广告到远程的中心设备（用 CBCentral对象来表征）。 CBPeripheralManager也用来响应远程中心设备的读写操作。</p>
-<p><img src="4C0EBC6F-2FD3-431C-A181-A8DEAE88D169.png" alt="image"> </p>
 <p>当你设置或者与本地外围设备（CBPeripheralManager）数据进行交互时，你处理的是他的服务（services）和特征（characteristics）。本地外围服务用CBMutableService对象来表征，特征用CBMutableCharacteristic对象来表征。</p>
-<p><img src="2066F666-ED02-4F5A-B8E7-A5765E62468E.png" alt="image"></p>
 <h2 id="执行常见的中心角色任务"><a href="#执行常见的中心角色任务" class="headerlink" title="执行常见的中心角色任务"></a>执行常见的中心角色任务</h2><p>在你的本地设备实现中心角色，你需要实现一下步骤：</p>
 <p>1.设置中心管理对象。</p>
 <p>2.发现和连接广播的外围设备。</p>
