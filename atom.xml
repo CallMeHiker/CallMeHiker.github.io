@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  
+  <subtitle>Hiker的博客</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-04-18T08:01:40.216Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Hiker</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>page</title>
+    <link href="http://example.com/2023/04/18/hexo/"/>
+    <id>http://example.com/2023/04/18/hexo/</id>
+    <published>2023-04-18T08:01:40.000Z</published>
+    <updated>2023-04-18T08:01:40.216Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>iOS点语法与下划线</title>
+    <link href="http://example.com/2022/08/25/ios-dian-yu-fa-yu-xia-hua-xian/"/>
+    <id>http://example.com/2022/08/25/ios-dian-yu-fa-yu-xia-hua-xian/</id>
+    <published>2022-08-25T09:54:39.000Z</published>
+    <updated>2022-08-26T08:48:19.706Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;关于iOS中属性引用，self.xx与_xx，还有self-&amp;gt;xx，三者的区别。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="iOS" scheme="http://example.com/tags/iOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2022/08/25/hello-world/"/>
+    <id>http://example.com/2022/08/25/hello-world/</id>
+    <published>2022-08-25T07:30:56.694Z</published>
+    <updated>2022-08-25T08:28:36.176Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="http://example.com/categories/Hexo/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bluetooth</title>
+    <link href="http://example.com/2022/08/24/ios-lan-ya/"/>
+    <id>http://example.com/2022/08/24/ios-lan-ya/</id>
+    <published>2022-08-24T10:25:41.000Z</published>
+    <updated>2022-08-26T02:42:22.364Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;关于Core-Bluetooth&quot;&gt;&lt;a href=&quot;#关于Core-Bluetooth&quot; class=&quot;headerlink&quot; title=&quot;关于Core Bluetooth&quot;&gt;&lt;/a&gt;关于Core Bluetooth&lt;/h2&gt;&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;p&gt;Core Bluetooth framework 提供了iOS和Mac app 与蓝牙设备交互的类。例如，你的app可以发现，检测外围蓝牙设备并与之通信。Mac和iOS设备也可以充当蓝牙外围设备，保存数据到其他设备，包括Mac 和 iOS 设备。蓝牙无线技术基于蓝牙4.0规格，Core Bluetooth framework抽象了蓝牙协议栈，隐藏了底层细节，让开发者更容易的开发蓝牙相关的app。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="iOS" scheme="http://example.com/tags/iOS/"/>
+    
+    <category term="蓝牙" scheme="http://example.com/tags/%E8%93%9D%E7%89%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown简单语法规则</title>
+    <link href="http://example.com/2018/03/02/markdown-jian-dan-yu-fa-gui-ze/"/>
+    <id>http://example.com/2018/03/02/markdown-jian-dan-yu-fa-gui-ze/</id>
+    <published>2018-03-02T09:38:46.000Z</published>
+    <updated>2022-08-26T03:19:42.532Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;认识Markdown&quot;&gt;&lt;a href=&quot;#认识Markdown&quot; class=&quot;headerlink&quot; title=&quot;认识Markdown&quot;&gt;&lt;/a&gt;认识Markdown&lt;/h2&gt;&lt;p&gt;轻量级文本编辑器，优点多多不一一赘述。在Mac 上，推荐应用 &lt;a href=&quot;http://25.io/mou/&quot;&gt;Mou&lt;/a&gt; ，不过，现在这个只支持OS X 10.7 to 10.11，像我的Sierra，还需等待一段时间。&lt;br&gt;(更新：现在我用的是&lt;a href=&quot;https://typora.io/&quot;&gt;Typora&lt;/a&gt;，额~感觉不大想推荐，因为它写了之后只显示最后效果，没有了markdown的语法，修改起来，会麻烦一点。不想折腾还是直接在简书上Markdown吧，哈哈哈)&lt;/p&gt;
+&lt;p&gt;PS:写了之后，发现简书上其实有了更全面的，给个&lt;a href=&quot;https://www.jianshu.com/p/191d1e21f7ed&quot;&gt;传送门&lt;/a&gt;。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
+    
+  </entry>
+  
+</feed>
