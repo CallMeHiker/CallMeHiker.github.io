@@ -1,7 +1,7 @@
 ---
 title: Bluetooth
 date: 2022-08-24 18:25:41
-tag: iOS
+tags: [iOS, 蓝牙]
 ---
 ## 关于Core Bluetooth
 

@@ -1,7 +1,7 @@
 ---
 title: Markdown简单语法规则
 date: 2018-03-02 17:38:46
-tags:
+tags: [Markdown]
 ---
 ## 认识Markdown
 轻量级文本编辑器，优点多多不一一赘述。在Mac 上，推荐应用 [Mou](http://25.io/mou/) ，不过，现在这个只支持OS X 10.7 to 10.11，像我的Sierra，还需等待一段时间。
