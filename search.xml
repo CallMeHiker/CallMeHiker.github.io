@@ -1,304 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Markdown简单语法规则</title>
-    <url>/2018/03/02/markdown-jian-dan-yu-fa-gui-ze/</url>
-    <content><![CDATA[<h2 id="认识Markdown"><a href="#认识Markdown" class="headerlink" title="认识Markdown"></a>认识Markdown</h2><p>轻量级文本编辑器，优点多多不一一赘述。在Mac 上，推荐应用 <a href="http://25.io/mou/">Mou</a> ，不过，现在这个只支持OS X 10.7 to 10.11，像我的Sierra，还需等待一段时间。<br>(更新：现在我用的是<a href="https://typora.io/">Typora</a>，额~感觉不大想推荐，因为它写了之后只显示最后效果，没有了markdown的语法，修改起来，会麻烦一点。不想折腾还是直接在简书上Markdown吧，哈哈哈)</p>
-<p>PS:写了之后，发现简书上其实有了更全面的，给个<a href="https://www.jianshu.com/p/191d1e21f7ed">传送门</a>。</p>
-<span id="more"></span>
-
-<h2 id="Markdown的简单语法及范例"><a href="#Markdown的简单语法及范例" class="headerlink" title="Markdown的简单语法及范例"></a>Markdown的简单语法及范例</h2><h3 id="1-一级标题"><a href="#1-一级标题" class="headerlink" title="1. 一级标题"></a>1. 一级标题</h3><p>一个<code>#</code></p>
-<h3 id="2-二级标题"><a href="#2-二级标题" class="headerlink" title="2. 二级标题"></a>2. 二级标题</h3><p> 两个<code>##</code><br> 没错，你已经想到了，每个多一级标题，就多一个”#”，最多6级标题，每个”#”后面，最好多敲一个空格。</p>
-<h3 id="3-无序列表"><a href="#3-无序列表" class="headerlink" title="3. 无序列表"></a>3. 无序列表</h3><p> 文字前直接加 “<code>*</code>“<br> 例子：</p>
-<ul>
-<li>我是无序列表</li>
-<li>我也是无序列表</li>
-</ul>
-<h3 id="4-有序列表"><a href="#4-有序列表" class="headerlink" title="4. 有序列表"></a>4. 有序列表</h3><p> 文字前直接加 “1.” “2.” “3.”<br> 例子：</p>
-<ol>
-<li>我是有序列表</li>
-<li>我也是有序列表</li>
-</ol>
-<h3 id="5-分割线"><a href="#5-分割线" class="headerlink" title="5. 分割线"></a>5. 分割线</h3><p> 三个 <code>***</code><br> 例子：</p>
-<hr>
-<h3 id="6-引入"><a href="#6-引入" class="headerlink" title="6. 引入"></a>6. 引入</h3><p> 文字前直接加 “&gt;”(大于号)<br> 例子：</p>
-<blockquote>
-<p>我是引入的内容</p>
-</blockquote>
-<h3 id="7-插入图片"><a href="#7-插入图片" class="headerlink" title="7. 插入图片"></a>7. 插入图片</h3><p>其实就是超链接前加个<code>!</code><br>例子：<br><code>![我养你啊](http://upload-images.jianshu.io/upload_images/1648750-db628ae15041d78d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)</code> &#x3D;&#x3D;&gt;<br><img src="http://upload-images.jianshu.io/upload_images/1648750-ebaf61e474f854fd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="我养你啊"></p>
-<h3 id="8-插入链接"><a href="#8-插入链接" class="headerlink" title="8. 插入链接"></a>8. 插入链接</h3><p><code> [需要链接的文字](链接地址)</code><br> 例子：<code>[Hiker的博客](https://callmehiker.github.io/)</code>  &#x3D;&#x3D;&gt;  <a href="https://callmehiker.github.io/">Hiker的博客</a></p>
-<h3 id="9-粗体字"><a href="#9-粗体字" class="headerlink" title="9. 粗体字"></a>9. 粗体字</h3><p><code>**需要加粗的文字**（将文字用4个*包裹起来）</code><br> 例子：<strong>我是粗体字</strong></p>
-<h3 id="10-斜体字"><a href="#10-斜体字" class="headerlink" title="10. 斜体字"></a>10. 斜体字</h3><p><code> *需要斜体的文字*（将文字用2个&quot;**&quot;包裹起来）</code><br>例子： <em>我是斜体字</em></p>
-<h3 id="11-代码框-程序员最爱"><a href="#11-代码框-程序员最爱" class="headerlink" title="11. 代码框(程序员最爱)"></a>11. 代码框(程序员最爱)</h3><p> <code>我是代码</code>（将代码用两个&#96;&#96;&#96;包裹起来，符号在键盘左上角，需要在英文输入模式下敲打）</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;远程推送注册成功
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
-&#123;
-    &#x2F;&#x2F; Required - 注册 DeviceToken
-    [self JpushServiceRegisterDeviceToken:deviceToken];
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="12-红色字体"><a href="#12-红色字体" class="headerlink" title="12. 红色字体"></a>12. 红色字体</h3><blockquote>
-<p>用两个 &#96;&#96;包起来</p>
-</blockquote>
-<p>例子 <code>我是红色字体</code></p>
-]]></content>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/08/25/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a></p>
-<span id="more"></span>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>page</title>
+      <link href="/2023/04/18/hexo/"/>
+      <url>/2023/04/18/hexo/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>iOS点语法与下划线</title>
+      <link href="/2022/08/25/ios-dian-yu-fa-yu-xia-hua-xian/"/>
+      <url>/2022/08/25/ios-dian-yu-fa-yu-xia-hua-xian/</url>
+      
+        <content type="html"><![CDATA[<p>关于iOS中属性引用，self.xx与_xx，还有self-&gt;xx，三者的区别。</p><span id="more"></span><p>在iOS开发过程中，我们用@proprety声明一个属性后，在代码中我们可以用self.xx与_xx来获取到这个属性。有的还用self-&gt;xx去获取。下面就来说说三者的区别。</p><p>先说结论：区别就是是否有调用get&#x2F;set方法。</p><ol><li>self.xx是点语法，本质上是调用set方法跟get方法，点(.)在(&#x3D;)左侧，调用set方法，点在(&#x3D;)右侧调用get方法；</li><li>_xx,只是使用成员变量的值，不会调用get&#x2F;set方法；</li><li>还有的是直接用xx,去调用，其本质跟_xx一样，只是编程规范问题，后来苹果舍弃了直接用xx调用的写法；</li><li>self-&gt;_xx，是C++的写法，跟_xx一样，不会调用get&#x2F;set方法。</li></ol><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>@property 实际上是合并了@synthesize 方法，即生成set跟get方法，生成带下划线的变量’_xx’，<br>@property 默认是@synthesize，会生成_xx,但你也可以手动写成@dynamic，就不会生成set跟get方法，需要重写set跟get方法，还不会生成’_xx’。</p><p>@synthesize与@dynamic的区别</p><p>问题<br>1.当你重写了set跟get方法，系统就不会自动生成_xx变量；<br>这时候就需要用</p><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;为属性property生成一个变量别名@synthesize property &#x3D; _property;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ol start="2"><li></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> iOS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2022/08/25/hello-world/"/>
+      <url>/2022/08/25/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a></p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
       <categories>
-        <category>Hexo</category>
+          
+          <category> Hexo </category>
+          
       </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>page</title>
-    <url>/2023/04/18/hexo/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>iOS点语法与下划线</title>
-    <url>/2022/08/25/ios-dian-yu-fa-yu-xia-hua-xian/</url>
-    <content><![CDATA[<p>关于iOS中属性引用，self.xx与_xx，还有self-&gt;xx，三者的区别。</p>
-<span id="more"></span>
-<p>在iOS开发过程中，我们用@proprety声明一个属性后，在代码中我们可以用self.xx与_xx来获取到这个属性。有的还用self-&gt;xx去获取。下面就来说说三者的区别。</p>
-<p>先说结论：区别就是是否有调用get&#x2F;set方法。</p>
-<ol>
-<li>self.xx是点语法，本质上是调用set方法跟get方法，点(.)在(&#x3D;)左侧，调用set方法，点在(&#x3D;)右侧调用get方法；</li>
-<li>_xx,只是使用成员变量的值，不会调用get&#x2F;set方法；</li>
-<li>还有的是直接用xx,去调用，其本质跟_xx一样，只是编程规范问题，后来苹果舍弃了直接用xx调用的写法；</li>
-<li>self-&gt;_xx，是C++的写法，跟_xx一样，不会调用get&#x2F;set方法。</li>
-</ol>
-<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>@property 实际上是合并了@synthesize 方法，即生成set跟get方法，生成带下划线的变量’_xx’，<br>@property 默认是@synthesize，会生成_xx,但你也可以手动写成@dynamic，就不会生成set跟get方法，需要重写set跟get方法，还不会生成’_xx’。</p>
-<p>@synthesize与@dynamic的区别</p>
-<p>问题<br>1.当你重写了set跟get方法，系统就不会自动生成_xx变量；<br>这时候就需要用</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;为属性property生成一个变量别名
-@synthesize property &#x3D; _property;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<ol start="2">
-<li></li>
-</ol>
-]]></content>
-      <tags>
-        <tag>iOS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Bluetooth</title>
-    <url>/2022/08/24/ios-lan-ya/</url>
-    <content><![CDATA[<h2 id="关于Core-Bluetooth"><a href="#关于Core-Bluetooth" class="headerlink" title="关于Core Bluetooth"></a>关于Core Bluetooth</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>Core Bluetooth framework 提供了iOS和Mac app 与蓝牙设备交互的类。例如，你的app可以发现，检测外围蓝牙设备并与之通信。Mac和iOS设备也可以充当蓝牙外围设备，保存数据到其他设备，包括Mac 和 iOS 设备。蓝牙无线技术基于蓝牙4.0规格，Core Bluetooth framework抽象了蓝牙协议栈，隐藏了底层细节，让开发者更容易的开发蓝牙相关的app。</p>
-<span id="more"></span>
-
-<h3 id="中心和外围是蓝牙的两大角色"><a href="#中心和外围是蓝牙的两大角色" class="headerlink" title="中心和外围是蓝牙的两大角色"></a>中心和外围是蓝牙的两大角色</h3><p>在低功耗蓝牙通信中，有两大角色：中心和外围，外围一般负责提供数据，中心负责获取外围提供的数据来完成任务，比如数码恒温器提供温度数据给app设备，app在界面上显示数据。每个角色执行不同的一系列工作，外围对外暴露自己；中心扫描周围感兴趣的外围设备，当发现这样的外围设备，则会请求连接，连接成功后，与外围的数据进行交互。外围设备以一个合适的方式应答中心的请求。</p>
-<h3 id="核心蓝牙库简化了常见的蓝牙任务"><a href="#核心蓝牙库简化了常见的蓝牙任务" class="headerlink" title="核心蓝牙库简化了常见的蓝牙任务"></a>核心蓝牙库简化了常见的蓝牙任务</h3><p>Core Bluetooth framework封装了蓝牙4.0规格的细节，意味着你的app实现蓝牙功能会变得更加简单，如果你开发一个实现中心角色的app，核心蓝牙库会让发现外围，连接和与外围角色数据交互变得更加简单。除此之外，你也可以很容易的让你的app实现外围角色。</p>
-<h3 id="iOS-app状态影响蓝牙功能"><a href="#iOS-app状态影响蓝牙功能" class="headerlink" title="iOS app状态影响蓝牙功能"></a>iOS app状态影响蓝牙功能</h3><p>当你的app处于后台或者挂起状态，蓝牙相关的功能也会收到影响。默认的，如果app处于后台或者被挂起，蓝牙是不起作用的，如果你需要在app进入后台状态下执行蓝牙功能，你可以定义蓝牙后台执行模式。即使你设置了后台模式，但是app还是有可能被杀进程，比如内存不足。iOS7之后，Core Bluetooth支持保存状态信息并在app启动的时候重建之前的状态。你可以使用这个特性来支持蓝牙设备的长时间动作。</p>
-<h3 id="通过最佳实践来达到更好的用户体验"><a href="#通过最佳实践来达到更好的用户体验" class="headerlink" title="通过最佳实践来达到更好的用户体验"></a>通过最佳实践来达到更好的用户体验</h3><p>Core Bluetooth framework提供了跨越蓝牙通用功能的控制，通过最佳实践达到最好的用户体验。例如你使用无线电来传输信号来实现中心外围角色，因为你的设备的无线电与其他形式的无线通信共享而且无线电发送的使用会非常耗电，所以你需要尽可能少的使用无线电发送。</p>
-<h2 id="Core-Bluetooth-概览"><a href="#Core-Bluetooth-概览" class="headerlink" title="Core Bluetooth 概览"></a>Core Bluetooth 概览</h2><p>需要注意的是：iOS10之后需要在info.plist文件中设置NSBluetoothPeripheralUsageDescription以访问蓝牙权限，否则程序会崩溃。</p>
-<h3 id="中心设备和外围设备在通信中负责的任务"><a href="#中心设备和外围设备在通信中负责的任务" class="headerlink" title="中心设备和外围设备在通信中负责的任务"></a>中心设备和外围设备在通信中负责的任务</h3><p>外围通过广播一个广告包数据，改数据包含有外围提供的一些有用的信息例如名称，基本功能。另一方面，中心设备则扫描和监听外围设备，中心设备能够请求连接发现的外围。</p>
-<h4 id="外围设备的数据构造"><a href="#外围设备的数据构造" class="headerlink" title="外围设备的数据构造"></a>外围设备的数据构造</h4><p>连接外围设备的目的是为了交互数据，在进行交互前，需要明白外围是如何组织数据的。外围设备可能包含一个或多个服务，或提供有关其连接信号强度的有用信息。服务是一些数据和实现设备（或设备的一部分）相关功能和特性的行为的集合。例如心率探测器的服务是为了显示传感器的心率数据。服务本身由特征或包含的服务(即对其他服务的引用)组成，特征（characteristic）提供了服务（service）的进一步的细节。<br>​</p>
-<h3 id="核心蓝牙库里如何表征中心，外围及外围数据"><a href="#核心蓝牙库里如何表征中心，外围及外围数据" class="headerlink" title="核心蓝牙库里如何表征中心，外围及外围数据"></a>核心蓝牙库里如何表征中心，外围及外围数据</h3><h4 id="中心设备探索并与外围设备进行数据交互-本地为中心，远程为外围"><a href="#中心设备探索并与外围设备进行数据交互-本地为中心，远程为外围" class="headerlink" title="中心设备探索并与外围设备进行数据交互(本地为中心，远程为外围)"></a>中心设备探索并与外围设备进行数据交互(本地为中心，远程为外围)</h4><p>当中心与外围设备建立连接成功后，可以发现全部的服务和特征，中心设备也可以通过读写数据与外围设备实现交互。在中心设备这边，一个中心设备由 CBCentralManager 来表征。这个对象用来管理发现和连接外围设备（用CBPeripheral对象来表征），包括扫描，发现，连接外围设备。</p>
-<p>当你与外围设备（CBPeripheral对象）进行数据交互时，你处理的是他的服务（services）和特征（characteristics）。服务用CBService 对象来表征，特征用 CBCharacteristic 对象来表征。</p>
-<h4 id="本地设备作为外围，远程是中心设备"><a href="#本地设备作为外围，远程是中心设备" class="headerlink" title="本地设备作为外围，远程是中心设备"></a>本地设备作为外围，远程是中心设备</h4><p>iOS6， macOS 10.9之后，设备可以作为外围，实现蓝牙外围设备的行为与外界通信。给其他设备提供数据。ios或macOS充当外围设备时，用 CBPeripheralManager 对象表征。改对象来管理公开服务和特征（从设备数据库里面获取），广告到远程的中心设备（用 CBCentral对象来表征）。 CBPeripheralManager也用来响应远程中心设备的读写操作。</p>
-<p>当你设置或者与本地外围设备（CBPeripheralManager）数据进行交互时，你处理的是他的服务（services）和特征（characteristics）。本地外围服务用CBMutableService对象来表征，特征用CBMutableCharacteristic对象来表征。</p>
-<h2 id="执行常见的中心角色任务"><a href="#执行常见的中心角色任务" class="headerlink" title="执行常见的中心角色任务"></a>执行常见的中心角色任务</h2><p>在你的本地设备实现中心角色，你需要实现一下步骤：</p>
-<p>1.设置中心管理对象。</p>
-<p>2.发现和连接广播的外围设备。</p>
-<p>3.连接后，检测外围设备的数据。</p>
-<p>4.对外围设备服务的特征值发送读写请求。</p>
-<p>5.订阅特征值，以便当特征值更新时收到通知。</p>
-<h3 id="设置中心管理者"><a href="#设置中心管理者" class="headerlink" title="设置中心管理者"></a>设置中心管理者</h3><p>CBCentralManager 为本地中心设备的对象表征。初始化CBCentralManager</p>
-<pre class="line-numbers language-none"><code class="language-none">CBCentralManager *myCentralManager &#x3D; [[CBCentralManager alloc] initWithDelegate:self queue:nil options:nil];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>self设置为代理，用来接收蓝牙事件，queue设置为nil时，蓝牙事件会在主线程中执行。当你创建一个CBCentralManager，需要实现 centralManagerDidUpdateState:代理来确保蓝牙可以使用。更多的代理方法可查阅：CBCentralManagerDelegate Protocol Reference.</p>
-<h3 id="发现广播的外围设备"><a href="#发现广播的外围设备" class="headerlink" title="发现广播的外围设备"></a>发现广播的外围设备</h3><p>通过调用CBCentralManager的 scanForPeripheralsWithServices:options: 方法来发现设备，</p>
-<pre class="line-numbers language-none"><code class="language-none">[myCentralManager scanForPeripheralsWithServices:nil options:nil];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>注意：当你传的参数为nil时，CBCentralManager会返回所有发现的外围设备。不管是否支持相关服务。通常在app里面，外围服务以 CBUUID 对象来唯一指定，传 CBUUID 数组来表示你感兴趣的设备，会返回只有对应服务的外围设备。</p>
-<p>每次中心管理者发现一个外围设备，就会调用 centralManager:didDiscoverPeripheral:advertisementData:RSSI: 方法，新发现的设备会返回 CBPeripheral 对象，如果你想要连接某个发现的外围对象（CBPeripheral），需要对该对象保持强引用。比如：</p>
-<pre class="line-numbers language-none"><code class="language-none">-(void)centralManager::(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI &#123;
- NSLog(@&quot;Discovered %@&quot;, peripheral.name);
- self.discoveredPeripheral &#x3D; peripheral;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>如果你需要连接多个外围（CBPeripheral）你需要用一个NSArray来持有这些对象，当你已经获取完了这些外围，你需要调用stopScan方法来停止扫描，以减少电量的消耗。</p>
-<pre class="line-numbers language-none"><code class="language-none">[myCentralManager stopScan]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="连接外围设备"><a href="#连接外围设备" class="headerlink" title="连接外围设备"></a>连接外围设备</h3><p>发现外围之后，调用 connectPeripheral:options: 方法来进行连接。</p>
-<pre class="line-numbers language-none"><code class="language-none">[myCentralManager connectPeripheral:peripheral options:nil];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>连接成功后会收到CBCentralManager的回调 centralManager:didConnectPeripheral: ，在回调方法中，你需要设置连接成功的CBPeripheral的代理用来接收回调。</p>
-<pre class="line-numbers language-none"><code class="language-none">- (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral &#123;
- NSLog(@&quot;Peripheral connected&quot;);
- peripheral.delegate &#x3D; self;
- ...
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="发现你所连接的外围所提供的服务"><a href="#发现你所连接的外围所提供的服务" class="headerlink" title="发现你所连接的外围所提供的服务"></a>发现你所连接的外围所提供的服务</h3><p>在连接了外围设备之后，你可以探索数据了，探索外围数据的第一步是发现有效的服务。因为外设可以发布的数据量有大小限制，你可能通过发现会获取更多的服务数据，通过调用discoverServices:方法来发现服务。</p>
-<pre class="line-numbers language-none"><code class="language-none">[peripheral discoverServices:nil];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>如果传nil则会返回该外围设备的所有服务， 一般来说，你可以传你感兴趣的服务。当指定的服务被发现后，CBPeripheral 会回调 peripheral:didDiscoverServices: 代理方法。你可以实现该方法来访问服务数组。</p>
-<pre class="line-numbers language-none"><code class="language-none">- (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error &#123;
- for (CBService *service in peripheral.services) &#123;
- NSLog(@&quot;Discovered service %@&quot;, service);
- ...
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="发现一个服务的特征"><a href="#发现一个服务的特征" class="headerlink" title="发现一个服务的特征"></a>发现一个服务的特征</h3><p>当你发现服务后，接下来就是要发现该服务的特征，调用 peripheral 的 discoverCharacteristics:forService: 方法来发现特征。</p>
-<pre class="line-numbers language-none"><code class="language-none">[peripheral discoverCharacteristics:nil forService:interestingService];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>同理，如果你传nil参数，则会获取到所有的特征对象，一般来说，你应该指定UUIDs来代表你想要发现的特征。</p>
-<p>当获取完特征后，CBPeripheral对象会调用代理方法 peripheral:didDiscoverCharacteristicsForService:error: 来返回特征数组。</p>
-<pre class="line-numbers language-none"><code class="language-none">- (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error &#123;
- for (CBCharacteristic *characteristic in service.characteristics) &#123;
- NSLog(@&quot;Discovered characteristic %@&quot;, characteristic);
- ...
- &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="获取特征数据"><a href="#获取特征数据" class="headerlink" title="获取特征数据"></a>获取特征数据</h3><p>一个特征（characteristic）包含一个信号值来表征外围的服务信息，比如一个健康温度计服务的温度测量特征会有一个值来表示温度，你可以通过直接读取或订阅更新来获得这个特征值。</p>
-<h4 id="读取特征值"><a href="#读取特征值" class="headerlink" title="读取特征值"></a>读取特征值</h4><p>调用 readValueForCharacteristic: 方法来读取特征值。</p>
-<pre class="line-numbers language-none"><code class="language-none">[peripheral readValueForCharacteristic:interestingCharacteristic];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>当你尝试读取特征值时，peripheral对象通过调用 peripheral:didUpdateValueForCharacteristic:error: 方法来使得它的代理对象获取对应的值。</p>
-<pre class="line-numbers language-none"><code class="language-none">- (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error &#123;
- NSData *data &#x3D; characteristic.value;
-
- &#x2F;&#x2F; parse the data as needed
-
- ...
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>并不是所有的特征值都是可读的，你可以检查包含CBCharacteristicPropertyRead 的属性来决定是否可读。如果你去读取一个不可读的特征， peripheral:didUpdateValueForCharacteristic:error: 代理方法将会被调用。</p>
-<h4 id="订阅特征值"><a href="#订阅特征值" class="headerlink" title="订阅特征值"></a>订阅特征值</h4><p>如果是静态的特征值，采取读取的方式比较高效，但是如果特征值是动态的，则采取订阅的方式。当特征值发生变化时，将会收到外围设备的通知。通过调用 setNotifyValue:forCharacteristic: 方法，第一个参数传YES来实现订阅特征值。</p>
-<pre class="line-numbers language-none"><code class="language-none">if(interestingCharacteristic.isNotifying &#x3D;&#x3D; NO)&#123;
- [peripheral setNotifyValue:YES forCharacteristic:interestingCharacteristic];
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>当你订阅或取消订阅一个特征值时，peripheral会发送 peripheral:didUpdateNotificationStateForCharacteristic:error: 方法给代理对象。如果订阅失败，可以通过error获得失败结果。</p>
-<pre class="line-numbers language-none"><code class="language-none">- (void)peripheral:(CBPeripheral *)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error &#123;
- if (error) &#123;
- NSLog(@&quot;Error changing notification state: %@&quot;,
- [error localizedDescription]);
- &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>并不是所有的特征都提供订阅，你可以通过 properties 的 CBCharacteristicPropertyNotify 或 CBCharacteristicPropertyIndicate 常量来决定改特征是否提供订阅。</p>
-<p>当你成功订阅一个特征时，当特征值发生变化时，peripheral会调用 peripheral:didUpdateValueForCharacteristic:error: 方法来通知代理对象。在实现的代理方法中通过直接读取特征的方法来获得特征值。</p>
-<h3 id="写入特征数据"><a href="#写入特征数据" class="headerlink" title="写入特征数据"></a>写入特征数据</h3><p>有些场景需要写数据到蓝牙模块，调用peripheral的 writeValue:forCharacteristic:type: 方法来实现对相应的特征写入数据。</p>
-<pre class="line-numbers language-none"><code class="language-none">[peripheral writeValue:dataToWrite forCharacteristic:interestingCharacteristic type:CBCharacteristicWriteWithResponse];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>注意type参数，如果传CBCharacteristicWriteWithResponse，则peripheral会通过 peripheral:didWriteValueForCharacteristic:error: 代理方法来告知是否写入成功。</p>
-<pre class="line-numbers language-none"><code class="language-none">- (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error &#123;
- if (error) &#123;
- NSLog(@&quot;Error writing characteristic value: %@&quot;, [error localizedDescription]);
- &#125;
- ...
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>如果传的是CBCharacteristicWriteWithoutResponse，则不会告知是否写入成功，也不一定保证写入成功，根据性能来决定。</p>
-<p>特征可能只支持某些类型的写入。通过 properties 的CBCharacteristicPropertyWriteWithoutResponse or CBCharacteristicPropertyWrite 常量来决定。</p>
-<h2 id="在本地设备执行常见的外围任务"><a href="#在本地设备执行常见的外围任务" class="headerlink" title="在本地设备执行常见的外围任务"></a>在本地设备执行常见的外围任务</h2><p>要在本地设备实现常见的外围设备任务，有以下步骤：</p>
-<p>1.设置外围管理者对象。</p>
-<p>2.在你本地外围设备设置服务和特征。</p>
-<p>3.发布你的服务和特征到你设备本地的数据库。</p>
-<p>4.广播服务。</p>
-<p>5.回应连接中心的读写请求。</p>
-<p>6.发送更新的特征值到订阅的中心设备。</p>
-<h3 id="设置外围管理对象"><a href="#设置外围管理对象" class="headerlink" title="设置外围管理对象"></a>设置外围管理对象</h3><pre class="line-numbers language-none"><code class="language-none">myPeripheralManager &#x3D; [[CBPeripheralManager alloc] initWithDelegate:self queue:nil options:nil];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>如果queue参数传nil，则事件默认运行在主线程。当创建完成后，CBPeripheralManager会调用代理方法 peripheralManagerDidUpdateState:，需要实现该代理方法确保你的设备是否支持本地外围设备。</p>
-<h3 id="设置服务与特征"><a href="#设置服务与特征" class="headerlink" title="设置服务与特征"></a>设置服务与特征</h3><p>在前面的图可以知道，本地外围的服务和特征是以树状的形式来组织的，所以设置的时候也要以树状的形式来组织，首先要明白的是服务和特征是怎么被识别的。</p>
-<h4 id="服务和特征通过-UUIDs-来被识别"><a href="#服务和特征通过-UUIDs-来被识别" class="headerlink" title="服务和特征通过 UUIDs 来被识别"></a>服务和特征通过 UUIDs 来被识别</h4><p>外围设备的服务和特征是通过128位的蓝牙规格指定的 UUIDs 来标记，通过核心蓝牙库的 CBUUID 对象来表征。虽然不是所有的蓝牙服务和特征都是有蓝牙兴趣组（SIG）预定义的，蓝牙SIG定义并发布了许多常用的uuid，为了方便，这些uuid被缩短为16位。例如，Bluetooth SIG预定义了16位UUID，该UUID将心率服务标识为180D.这个uuuid是从等效的128位UUID (0000180D-0000-1000-8000-00805F9B34FB)缩短而来的，它基于蓝牙4.0规范(卷3,F部分，第3.2.1节)中定义的蓝牙基础UUID。</p>
-<p>CBUUID类提供了工厂方法，这使得在开发应用程序时更容易处理长uuid。例如，与其在代码中传递心率服务的128位UUID的字符串表示形式，不如使用UUIDWithString方法从服务预定义的16位UUID中创建一个CBUUID对象，如下所示:</p>
-<pre class="line-numbers language-none"><code class="language-none">CBUUID *heartRateServiceUUID &#x3D; [CBUUID UUIDWithString: @&quot;180D&quot;];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>当您从预定义的16位UUID创建一个CBUUID对象时，核心蓝牙预先填充了其他128位UUID。</p>
-<h4 id="给你自己定义的服务和特征创建UUIDs"><a href="#给你自己定义的服务和特征创建UUIDs" class="headerlink" title="给你自己定义的服务和特征创建UUIDs"></a>给你自己定义的服务和特征创建UUIDs</h4><p>可能蓝牙预定义的UUIDs里面没有你的服务和特征，这时候，你需要自己创建预定义的UUIDs，你可以在终端输入命令行：uuidgen 获取到UUID,如：</p>
-<pre class="line-numbers language-none"><code class="language-none">$ uuidgen
-71DA3FD1-7E10-41C1-B16F-4430B506CDE7<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>接下来，使用uuid来创建 CBUUID 对象，</p>
-<pre class="line-numbers language-none"><code class="language-none">CBUUID *myCustomServiceUUID &#x3D; [CBUUID UUIDWithString:@&quot;71DA3FD1-7E10-41C1-B16F-4430B506CDE7&quot;];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h4 id="构建服务特征树"><a href="#构建服务特征树" class="headerlink" title="构建服务特征树"></a>构建服务特征树</h4><p>有了CBUUID来代表服务和特征后，你可以创建可变的服务和特征来构建服务特征树。如，你有一个特征uuid，你可以建立如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">myCharacteristic &#x3D; [[CBMutableCharacteristic alloc] initWithType:myCharacteristicUUID properties:CBCharacteristicPropertyRead value:myValue permissions:CBAttributePermissionsReadable];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>你可以设置里面的 properties， permission， value，设置是否可以被中心设备读取。如果你指定一个特征的值，这个值会被缓存起来，properties和permissions将会被设置为可读，所以如果你想让中心设备写入值，或者想让这个值在它所属的服务的生命周期内发生变化，你必须指定这个值为nil。</p>
-<p>接下来创建可变的服务，并且让特征与服务联系起来。</p>
-<pre class="line-numbers language-none"><code class="language-none">myService &#x3D; [[CBMutableService alloc] initWithType:myServiceUUID primary:YES];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>参数 primary 区别是主要服务还是辅助服务，比如心率探测器的主要服务为读取心率数据的服务，读取电池数据服务为辅助服务。</p>
-<p>把服务与特征联系起来：</p>
-<pre class="line-numbers language-none"><code class="language-none">myService.characteristics &#x3D; @[myCharacteristic];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="发布你的服务和特征"><a href="#发布你的服务和特征" class="headerlink" title="发布你的服务和特征"></a>发布你的服务和特征</h3><p>完成服务特征树之后，你就可以发布服务特征到设备的数据库了，如下步骤：</p>
-<p>1.添加服务</p>
-<pre class="line-numbers language-none"><code class="language-none">[myPeripheralManager addService:myService];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>2.添加后，myPeripheralManager 会回调 peripheralManager:didAddService:error: 方法给代理，实现代理方法：</p>
-<pre class="line-numbers language-none"><code class="language-none">- (void)peripheralManager:(CBPeripheralManager *)peripheral didAddService:(CBService *)service error:(NSError *)error &#123;
- if (error) &#123;
- NSLog(@&quot;Error publishing service: %@&quot;, [error localizedDescription]);
- &#125;
- ...
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="广播你的服务和特征"><a href="#广播你的服务和特征" class="headerlink" title="广播你的服务和特征"></a>广播你的服务和特征</h3><p>把服务和特征写入到本地数据库之后，你可以广播你的服务了，调用以下方法：</p>
-<pre class="line-numbers language-none"><code class="language-none">[myPeripheralManager startAdvertising:@&#123;CBAdvertisementDataServiceUUIDsKey : @[myFirstService.UUID, mySecondService.UUID] &#125;];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>同理需要实现代理方法来得知是否广播成功：</p>
-<pre class="line-numbers language-none"><code class="language-none">- (void)peripheralManagerDidStartAdvertising:(CBPeripheralManager *)peripheral error:(NSError *)error &#123;
- if (error) &#123;
- NSLog(@&quot;Error advertising: %@&quot;, [error localizedDescription]);
- &#125;
- ...
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>当广告成功后，中心设备可以发现并连接。</p>
-<h3 id="响应中心设备的读写"><a href="#响应中心设备的读写" class="headerlink" title="响应中心设备的读写"></a>响应中心设备的读写</h3><h4 id="处理读取请求"><a href="#处理读取请求" class="headerlink" title="处理读取请求"></a>处理读取请求</h4><p>1.当连接的中心设备读取特征数据时，peripheral manager会调用代理方法 peripheralManager:didReceiveReadRequest: ，如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">- (void)peripheralManager:(CBPeripheralManager *)peripheraldidReceiveReadRequest:(CBATTRequest *)request &#123;
- if ([request.characteristic.UUID isEqual:myCharacteristic.UUID]) &#123;
- ...
- &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>2.如果特征的uuid是匹配的，下一步就是确保读取的偏移位置并没有超出特征值的边界。如：</p>
-<pre class="line-numbers language-none"><code class="language-none">if (request.offset &gt; myCharacteristic.value.length) &#123;
- [myPeripheralManager respondToRequest:request withResult:CBATTErrorInvalidOffset];
- return;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>3.假设偏移位置是正确的，这时设置特征值。</p>
-<pre class="line-numbers language-none"><code class="language-none">request.value &#x3D; [myCharacteristic.value subdataWithRange:NSMakeRange(request.offset, myCharacteristic.value.length - request.offset)];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>4.回传request，调用 respondToRequest:withResult: 方法，</p>
-<pre class="line-numbers language-none"><code class="language-none">[myPeripheralManager respondToRequest:request withResult:CBATTErrorSuccess];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>每次收到 peripheralManager:didReceiveReadRequest: 方法时，准确的调用 respondToRequest:withResult: 方法。当uuid没有匹配或者发生其他错误的时候，返回错误信息， 核心库里CBATTError Constants 里定义了各种错误。</p>
-<h4 id="处理写请求"><a href="#处理写请求" class="headerlink" title="处理写请求"></a>处理写请求</h4><p>处理读请求也是同样的简单，同理，当收到写请求时，peripheral manager会调用peripheralManager:didReceiveWriteRequests: 方法，利用 myCharacteristic.value &#x3D; request.value;来设置写入的值。在写入特征值时，一定也要考虑请求的偏移属性。</p>
-<p>同理，当写完成后调用 respondToRequest:withResult: 方法来告知中心设备。但是request参数需要传peripheralManager:didReceiveWriteRequests:中的第一个。</p>
-<h3 id="发送更新的特征值到订阅的中心设备"><a href="#发送更新的特征值到订阅的中心设备" class="headerlink" title="发送更新的特征值到订阅的中心设备"></a>发送更新的特征值到订阅的中心设备</h3><p>1.当中心设备要订阅一个特征值时，peripheral manager 会调用代理方法： peripheralManager:central:didSubscribeToCharacteristic:，</p>
-<pre class="line-numbers language-none"><code class="language-none">- (void)peripheralManager:(CBPeripheralManager *)peripheral central:(CBCentral *)central didSubscribeToCharacteristic:(CBCharacteristic *)characteristic &#123;
- NSLog(@&quot;Central subscribed to characteristic %@&quot;, characteristic);
- ...
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>2.当订阅的值发生改变时</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; fetch the characteristic&#39;s new value
-NSData *updatedValue &#x3D; BOOL didSendValue &#x3D; [myPeripheralManager updateValue:updatedValue forCharacteristic:characteristic onSubscribedCentrals:nil];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>如果 onSubscribedCentrals 参数传nil，所有的连接并订阅的中心设备将会收到通知。改方法会返回一个布尔值来表明是否发送成功，如果底层的发送队列已经满了，则会返回NO。当队列有空间并有效时，会调用代理方法 peripheralManagerIsReadyToUpdateSubscribers: 你可以实现该方法调用 updateValue:forCharacteristic:onSubscribedCentrals: 重新发送。</p>
-<p>需要注意的是，取决于特征值数据包大小，有些特征值不一定完全返回，中心设备收到通知后，可用 CBPeripheral 的 readValueForCharacteristic: 方法来读取所有的数据包。</p>
-<p><img src="/158.jpeg" alt="hh1"></p>
-]]></content>
-      <tags>
-        <tag>iOS</tag>
-        <tag>蓝牙</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Bluetooth</title>
+      <link href="/2022/08/24/ios-lan-ya/"/>
+      <url>/2022/08/24/ios-lan-ya/</url>
+      
+        <content type="html"><![CDATA[<h2 id="关于Core-Bluetooth"><a href="#关于Core-Bluetooth" class="headerlink" title="关于Core Bluetooth"></a>关于Core Bluetooth</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>Core Bluetooth framework 提供了iOS和Mac app 与蓝牙设备交互的类。例如，你的app可以发现，检测外围蓝牙设备并与之通信。Mac和iOS设备也可以充当蓝牙外围设备，保存数据到其他设备，包括Mac 和 iOS 设备。蓝牙无线技术基于蓝牙4.0规格，Core Bluetooth framework抽象了蓝牙协议栈，隐藏了底层细节，让开发者更容易的开发蓝牙相关的app。</p><span id="more"></span><h3 id="中心和外围是蓝牙的两大角色"><a href="#中心和外围是蓝牙的两大角色" class="headerlink" title="中心和外围是蓝牙的两大角色"></a>中心和外围是蓝牙的两大角色</h3><p>在低功耗蓝牙通信中，有两大角色：中心和外围，外围一般负责提供数据，中心负责获取外围提供的数据来完成任务，比如数码恒温器提供温度数据给app设备，app在界面上显示数据。每个角色执行不同的一系列工作，外围对外暴露自己；中心扫描周围感兴趣的外围设备，当发现这样的外围设备，则会请求连接，连接成功后，与外围的数据进行交互。外围设备以一个合适的方式应答中心的请求。</p><h3 id="核心蓝牙库简化了常见的蓝牙任务"><a href="#核心蓝牙库简化了常见的蓝牙任务" class="headerlink" title="核心蓝牙库简化了常见的蓝牙任务"></a>核心蓝牙库简化了常见的蓝牙任务</h3><p>Core Bluetooth framework封装了蓝牙4.0规格的细节，意味着你的app实现蓝牙功能会变得更加简单，如果你开发一个实现中心角色的app，核心蓝牙库会让发现外围，连接和与外围角色数据交互变得更加简单。除此之外，你也可以很容易的让你的app实现外围角色。</p><h3 id="iOS-app状态影响蓝牙功能"><a href="#iOS-app状态影响蓝牙功能" class="headerlink" title="iOS app状态影响蓝牙功能"></a>iOS app状态影响蓝牙功能</h3><p>当你的app处于后台或者挂起状态，蓝牙相关的功能也会收到影响。默认的，如果app处于后台或者被挂起，蓝牙是不起作用的，如果你需要在app进入后台状态下执行蓝牙功能，你可以定义蓝牙后台执行模式。即使你设置了后台模式，但是app还是有可能被杀进程，比如内存不足。iOS7之后，Core Bluetooth支持保存状态信息并在app启动的时候重建之前的状态。你可以使用这个特性来支持蓝牙设备的长时间动作。</p><h3 id="通过最佳实践来达到更好的用户体验"><a href="#通过最佳实践来达到更好的用户体验" class="headerlink" title="通过最佳实践来达到更好的用户体验"></a>通过最佳实践来达到更好的用户体验</h3><p>Core Bluetooth framework提供了跨越蓝牙通用功能的控制，通过最佳实践达到最好的用户体验。例如你使用无线电来传输信号来实现中心外围角色，因为你的设备的无线电与其他形式的无线通信共享而且无线电发送的使用会非常耗电，所以你需要尽可能少的使用无线电发送。</p><h2 id="Core-Bluetooth-概览"><a href="#Core-Bluetooth-概览" class="headerlink" title="Core Bluetooth 概览"></a>Core Bluetooth 概览</h2><p>需要注意的是：iOS10之后需要在info.plist文件中设置NSBluetoothPeripheralUsageDescription以访问蓝牙权限，否则程序会崩溃。</p><h3 id="中心设备和外围设备在通信中负责的任务"><a href="#中心设备和外围设备在通信中负责的任务" class="headerlink" title="中心设备和外围设备在通信中负责的任务"></a>中心设备和外围设备在通信中负责的任务</h3><p>外围通过广播一个广告包数据，改数据包含有外围提供的一些有用的信息例如名称，基本功能。另一方面，中心设备则扫描和监听外围设备，中心设备能够请求连接发现的外围。</p><h4 id="外围设备的数据构造"><a href="#外围设备的数据构造" class="headerlink" title="外围设备的数据构造"></a>外围设备的数据构造</h4><p>连接外围设备的目的是为了交互数据，在进行交互前，需要明白外围是如何组织数据的。外围设备可能包含一个或多个服务，或提供有关其连接信号强度的有用信息。服务是一些数据和实现设备（或设备的一部分）相关功能和特性的行为的集合。例如心率探测器的服务是为了显示传感器的心率数据。服务本身由特征或包含的服务(即对其他服务的引用)组成，特征（characteristic）提供了服务（service）的进一步的细节。<br>​</p><h3 id="核心蓝牙库里如何表征中心，外围及外围数据"><a href="#核心蓝牙库里如何表征中心，外围及外围数据" class="headerlink" title="核心蓝牙库里如何表征中心，外围及外围数据"></a>核心蓝牙库里如何表征中心，外围及外围数据</h3><h4 id="中心设备探索并与外围设备进行数据交互-本地为中心，远程为外围"><a href="#中心设备探索并与外围设备进行数据交互-本地为中心，远程为外围" class="headerlink" title="中心设备探索并与外围设备进行数据交互(本地为中心，远程为外围)"></a>中心设备探索并与外围设备进行数据交互(本地为中心，远程为外围)</h4><p>当中心与外围设备建立连接成功后，可以发现全部的服务和特征，中心设备也可以通过读写数据与外围设备实现交互。在中心设备这边，一个中心设备由 CBCentralManager 来表征。这个对象用来管理发现和连接外围设备（用CBPeripheral对象来表征），包括扫描，发现，连接外围设备。</p><p>当你与外围设备（CBPeripheral对象）进行数据交互时，你处理的是他的服务（services）和特征（characteristics）。服务用CBService 对象来表征，特征用 CBCharacteristic 对象来表征。</p><h4 id="本地设备作为外围，远程是中心设备"><a href="#本地设备作为外围，远程是中心设备" class="headerlink" title="本地设备作为外围，远程是中心设备"></a>本地设备作为外围，远程是中心设备</h4><p>iOS6， macOS 10.9之后，设备可以作为外围，实现蓝牙外围设备的行为与外界通信。给其他设备提供数据。ios或macOS充当外围设备时，用 CBPeripheralManager 对象表征。改对象来管理公开服务和特征（从设备数据库里面获取），广告到远程的中心设备（用 CBCentral对象来表征）。 CBPeripheralManager也用来响应远程中心设备的读写操作。</p><p>当你设置或者与本地外围设备（CBPeripheralManager）数据进行交互时，你处理的是他的服务（services）和特征（characteristics）。本地外围服务用CBMutableService对象来表征，特征用CBMutableCharacteristic对象来表征。</p><h2 id="执行常见的中心角色任务"><a href="#执行常见的中心角色任务" class="headerlink" title="执行常见的中心角色任务"></a>执行常见的中心角色任务</h2><p>在你的本地设备实现中心角色，你需要实现一下步骤：</p><p>1.设置中心管理对象。</p><p>2.发现和连接广播的外围设备。</p><p>3.连接后，检测外围设备的数据。</p><p>4.对外围设备服务的特征值发送读写请求。</p><p>5.订阅特征值，以便当特征值更新时收到通知。</p><h3 id="设置中心管理者"><a href="#设置中心管理者" class="headerlink" title="设置中心管理者"></a>设置中心管理者</h3><p>CBCentralManager 为本地中心设备的对象表征。初始化CBCentralManager</p><pre class="line-numbers language-none"><code class="language-none">CBCentralManager *myCentralManager &#x3D; [[CBCentralManager alloc] initWithDelegate:self queue:nil options:nil];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>self设置为代理，用来接收蓝牙事件，queue设置为nil时，蓝牙事件会在主线程中执行。当你创建一个CBCentralManager，需要实现 centralManagerDidUpdateState:代理来确保蓝牙可以使用。更多的代理方法可查阅：CBCentralManagerDelegate Protocol Reference.</p><h3 id="发现广播的外围设备"><a href="#发现广播的外围设备" class="headerlink" title="发现广播的外围设备"></a>发现广播的外围设备</h3><p>通过调用CBCentralManager的 scanForPeripheralsWithServices:options: 方法来发现设备，</p><pre class="line-numbers language-none"><code class="language-none">[myCentralManager scanForPeripheralsWithServices:nil options:nil];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>注意：当你传的参数为nil时，CBCentralManager会返回所有发现的外围设备。不管是否支持相关服务。通常在app里面，外围服务以 CBUUID 对象来唯一指定，传 CBUUID 数组来表示你感兴趣的设备，会返回只有对应服务的外围设备。</p><p>每次中心管理者发现一个外围设备，就会调用 centralManager:didDiscoverPeripheral:advertisementData:RSSI: 方法，新发现的设备会返回 CBPeripheral 对象，如果你想要连接某个发现的外围对象（CBPeripheral），需要对该对象保持强引用。比如：</p><pre class="line-numbers language-none"><code class="language-none">-(void)centralManager::(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI &#123; NSLog(@&quot;Discovered %@&quot;, peripheral.name); self.discoveredPeripheral &#x3D; peripheral;&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>如果你需要连接多个外围（CBPeripheral）你需要用一个NSArray来持有这些对象，当你已经获取完了这些外围，你需要调用stopScan方法来停止扫描，以减少电量的消耗。</p><pre class="line-numbers language-none"><code class="language-none">[myCentralManager stopScan]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="连接外围设备"><a href="#连接外围设备" class="headerlink" title="连接外围设备"></a>连接外围设备</h3><p>发现外围之后，调用 connectPeripheral:options: 方法来进行连接。</p><pre class="line-numbers language-none"><code class="language-none">[myCentralManager connectPeripheral:peripheral options:nil];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>连接成功后会收到CBCentralManager的回调 centralManager:didConnectPeripheral: ，在回调方法中，你需要设置连接成功的CBPeripheral的代理用来接收回调。</p><pre class="line-numbers language-none"><code class="language-none">- (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral &#123; NSLog(@&quot;Peripheral connected&quot;); peripheral.delegate &#x3D; self; ...&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="发现你所连接的外围所提供的服务"><a href="#发现你所连接的外围所提供的服务" class="headerlink" title="发现你所连接的外围所提供的服务"></a>发现你所连接的外围所提供的服务</h3><p>在连接了外围设备之后，你可以探索数据了，探索外围数据的第一步是发现有效的服务。因为外设可以发布的数据量有大小限制，你可能通过发现会获取更多的服务数据，通过调用discoverServices:方法来发现服务。</p><pre class="line-numbers language-none"><code class="language-none">[peripheral discoverServices:nil];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果传nil则会返回该外围设备的所有服务， 一般来说，你可以传你感兴趣的服务。当指定的服务被发现后，CBPeripheral 会回调 peripheral:didDiscoverServices: 代理方法。你可以实现该方法来访问服务数组。</p><pre class="line-numbers language-none"><code class="language-none">- (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error &#123; for (CBService *service in peripheral.services) &#123; NSLog(@&quot;Discovered service %@&quot;, service); ...&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="发现一个服务的特征"><a href="#发现一个服务的特征" class="headerlink" title="发现一个服务的特征"></a>发现一个服务的特征</h3><p>当你发现服务后，接下来就是要发现该服务的特征，调用 peripheral 的 discoverCharacteristics:forService: 方法来发现特征。</p><pre class="line-numbers language-none"><code class="language-none">[peripheral discoverCharacteristics:nil forService:interestingService];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>同理，如果你传nil参数，则会获取到所有的特征对象，一般来说，你应该指定UUIDs来代表你想要发现的特征。</p><p>当获取完特征后，CBPeripheral对象会调用代理方法 peripheral:didDiscoverCharacteristicsForService:error: 来返回特征数组。</p><pre class="line-numbers language-none"><code class="language-none">- (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error &#123; for (CBCharacteristic *characteristic in service.characteristics) &#123; NSLog(@&quot;Discovered characteristic %@&quot;, characteristic); ... &#125;&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="获取特征数据"><a href="#获取特征数据" class="headerlink" title="获取特征数据"></a>获取特征数据</h3><p>一个特征（characteristic）包含一个信号值来表征外围的服务信息，比如一个健康温度计服务的温度测量特征会有一个值来表示温度，你可以通过直接读取或订阅更新来获得这个特征值。</p><h4 id="读取特征值"><a href="#读取特征值" class="headerlink" title="读取特征值"></a>读取特征值</h4><p>调用 readValueForCharacteristic: 方法来读取特征值。</p><pre class="line-numbers language-none"><code class="language-none">[peripheral readValueForCharacteristic:interestingCharacteristic];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>当你尝试读取特征值时，peripheral对象通过调用 peripheral:didUpdateValueForCharacteristic:error: 方法来使得它的代理对象获取对应的值。</p><pre class="line-numbers language-none"><code class="language-none">- (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error &#123; NSData *data &#x3D; characteristic.value; &#x2F;&#x2F; parse the data as needed ...&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>并不是所有的特征值都是可读的，你可以检查包含CBCharacteristicPropertyRead 的属性来决定是否可读。如果你去读取一个不可读的特征， peripheral:didUpdateValueForCharacteristic:error: 代理方法将会被调用。</p><h4 id="订阅特征值"><a href="#订阅特征值" class="headerlink" title="订阅特征值"></a>订阅特征值</h4><p>如果是静态的特征值，采取读取的方式比较高效，但是如果特征值是动态的，则采取订阅的方式。当特征值发生变化时，将会收到外围设备的通知。通过调用 setNotifyValue:forCharacteristic: 方法，第一个参数传YES来实现订阅特征值。</p><pre class="line-numbers language-none"><code class="language-none">if(interestingCharacteristic.isNotifying &#x3D;&#x3D; NO)&#123; [peripheral setNotifyValue:YES forCharacteristic:interestingCharacteristic];&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>当你订阅或取消订阅一个特征值时，peripheral会发送 peripheral:didUpdateNotificationStateForCharacteristic:error: 方法给代理对象。如果订阅失败，可以通过error获得失败结果。</p><pre class="line-numbers language-none"><code class="language-none">- (void)peripheral:(CBPeripheral *)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error &#123; if (error) &#123; NSLog(@&quot;Error changing notification state: %@&quot;, [error localizedDescription]); &#125;&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>并不是所有的特征都提供订阅，你可以通过 properties 的 CBCharacteristicPropertyNotify 或 CBCharacteristicPropertyIndicate 常量来决定改特征是否提供订阅。</p><p>当你成功订阅一个特征时，当特征值发生变化时，peripheral会调用 peripheral:didUpdateValueForCharacteristic:error: 方法来通知代理对象。在实现的代理方法中通过直接读取特征的方法来获得特征值。</p><h3 id="写入特征数据"><a href="#写入特征数据" class="headerlink" title="写入特征数据"></a>写入特征数据</h3><p>有些场景需要写数据到蓝牙模块，调用peripheral的 writeValue:forCharacteristic:type: 方法来实现对相应的特征写入数据。</p><pre class="line-numbers language-none"><code class="language-none">[peripheral writeValue:dataToWrite forCharacteristic:interestingCharacteristic type:CBCharacteristicWriteWithResponse];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>注意type参数，如果传CBCharacteristicWriteWithResponse，则peripheral会通过 peripheral:didWriteValueForCharacteristic:error: 代理方法来告知是否写入成功。</p><pre class="line-numbers language-none"><code class="language-none">- (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error &#123; if (error) &#123; NSLog(@&quot;Error writing characteristic value: %@&quot;, [error localizedDescription]); &#125; ...&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>如果传的是CBCharacteristicWriteWithoutResponse，则不会告知是否写入成功，也不一定保证写入成功，根据性能来决定。</p><p>特征可能只支持某些类型的写入。通过 properties 的CBCharacteristicPropertyWriteWithoutResponse or CBCharacteristicPropertyWrite 常量来决定。</p><h2 id="在本地设备执行常见的外围任务"><a href="#在本地设备执行常见的外围任务" class="headerlink" title="在本地设备执行常见的外围任务"></a>在本地设备执行常见的外围任务</h2><p>要在本地设备实现常见的外围设备任务，有以下步骤：</p><p>1.设置外围管理者对象。</p><p>2.在你本地外围设备设置服务和特征。</p><p>3.发布你的服务和特征到你设备本地的数据库。</p><p>4.广播服务。</p><p>5.回应连接中心的读写请求。</p><p>6.发送更新的特征值到订阅的中心设备。</p><h3 id="设置外围管理对象"><a href="#设置外围管理对象" class="headerlink" title="设置外围管理对象"></a>设置外围管理对象</h3><pre class="line-numbers language-none"><code class="language-none">myPeripheralManager &#x3D; [[CBPeripheralManager alloc] initWithDelegate:self queue:nil options:nil];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果queue参数传nil，则事件默认运行在主线程。当创建完成后，CBPeripheralManager会调用代理方法 peripheralManagerDidUpdateState:，需要实现该代理方法确保你的设备是否支持本地外围设备。</p><h3 id="设置服务与特征"><a href="#设置服务与特征" class="headerlink" title="设置服务与特征"></a>设置服务与特征</h3><p>在前面的图可以知道，本地外围的服务和特征是以树状的形式来组织的，所以设置的时候也要以树状的形式来组织，首先要明白的是服务和特征是怎么被识别的。</p><h4 id="服务和特征通过-UUIDs-来被识别"><a href="#服务和特征通过-UUIDs-来被识别" class="headerlink" title="服务和特征通过 UUIDs 来被识别"></a>服务和特征通过 UUIDs 来被识别</h4><p>外围设备的服务和特征是通过128位的蓝牙规格指定的 UUIDs 来标记，通过核心蓝牙库的 CBUUID 对象来表征。虽然不是所有的蓝牙服务和特征都是有蓝牙兴趣组（SIG）预定义的，蓝牙SIG定义并发布了许多常用的uuid，为了方便，这些uuid被缩短为16位。例如，Bluetooth SIG预定义了16位UUID，该UUID将心率服务标识为180D.这个uuuid是从等效的128位UUID (0000180D-0000-1000-8000-00805F9B34FB)缩短而来的，它基于蓝牙4.0规范(卷3,F部分，第3.2.1节)中定义的蓝牙基础UUID。</p><p>CBUUID类提供了工厂方法，这使得在开发应用程序时更容易处理长uuid。例如，与其在代码中传递心率服务的128位UUID的字符串表示形式，不如使用UUIDWithString方法从服务预定义的16位UUID中创建一个CBUUID对象，如下所示:</p><pre class="line-numbers language-none"><code class="language-none">CBUUID *heartRateServiceUUID &#x3D; [CBUUID UUIDWithString: @&quot;180D&quot;];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>当您从预定义的16位UUID创建一个CBUUID对象时，核心蓝牙预先填充了其他128位UUID。</p><h4 id="给你自己定义的服务和特征创建UUIDs"><a href="#给你自己定义的服务和特征创建UUIDs" class="headerlink" title="给你自己定义的服务和特征创建UUIDs"></a>给你自己定义的服务和特征创建UUIDs</h4><p>可能蓝牙预定义的UUIDs里面没有你的服务和特征，这时候，你需要自己创建预定义的UUIDs，你可以在终端输入命令行：uuidgen 获取到UUID,如：</p><pre class="line-numbers language-none"><code class="language-none">$ uuidgen71DA3FD1-7E10-41C1-B16F-4430B506CDE7<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>接下来，使用uuid来创建 CBUUID 对象，</p><pre class="line-numbers language-none"><code class="language-none">CBUUID *myCustomServiceUUID &#x3D; [CBUUID UUIDWithString:@&quot;71DA3FD1-7E10-41C1-B16F-4430B506CDE7&quot;];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h4 id="构建服务特征树"><a href="#构建服务特征树" class="headerlink" title="构建服务特征树"></a>构建服务特征树</h4><p>有了CBUUID来代表服务和特征后，你可以创建可变的服务和特征来构建服务特征树。如，你有一个特征uuid，你可以建立如下：</p><pre class="line-numbers language-none"><code class="language-none">myCharacteristic &#x3D; [[CBMutableCharacteristic alloc] initWithType:myCharacteristicUUID properties:CBCharacteristicPropertyRead value:myValue permissions:CBAttributePermissionsReadable];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>你可以设置里面的 properties， permission， value，设置是否可以被中心设备读取。如果你指定一个特征的值，这个值会被缓存起来，properties和permissions将会被设置为可读，所以如果你想让中心设备写入值，或者想让这个值在它所属的服务的生命周期内发生变化，你必须指定这个值为nil。</p><p>接下来创建可变的服务，并且让特征与服务联系起来。</p><pre class="line-numbers language-none"><code class="language-none">myService &#x3D; [[CBMutableService alloc] initWithType:myServiceUUID primary:YES];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>参数 primary 区别是主要服务还是辅助服务，比如心率探测器的主要服务为读取心率数据的服务，读取电池数据服务为辅助服务。</p><p>把服务与特征联系起来：</p><pre class="line-numbers language-none"><code class="language-none">myService.characteristics &#x3D; @[myCharacteristic];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="发布你的服务和特征"><a href="#发布你的服务和特征" class="headerlink" title="发布你的服务和特征"></a>发布你的服务和特征</h3><p>完成服务特征树之后，你就可以发布服务特征到设备的数据库了，如下步骤：</p><p>1.添加服务</p><pre class="line-numbers language-none"><code class="language-none">[myPeripheralManager addService:myService];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>2.添加后，myPeripheralManager 会回调 peripheralManager:didAddService:error: 方法给代理，实现代理方法：</p><pre class="line-numbers language-none"><code class="language-none">- (void)peripheralManager:(CBPeripheralManager *)peripheral didAddService:(CBService *)service error:(NSError *)error &#123; if (error) &#123; NSLog(@&quot;Error publishing service: %@&quot;, [error localizedDescription]); &#125; ...&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="广播你的服务和特征"><a href="#广播你的服务和特征" class="headerlink" title="广播你的服务和特征"></a>广播你的服务和特征</h3><p>把服务和特征写入到本地数据库之后，你可以广播你的服务了，调用以下方法：</p><pre class="line-numbers language-none"><code class="language-none">[myPeripheralManager startAdvertising:@&#123;CBAdvertisementDataServiceUUIDsKey : @[myFirstService.UUID, mySecondService.UUID] &#125;];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>同理需要实现代理方法来得知是否广播成功：</p><pre class="line-numbers language-none"><code class="language-none">- (void)peripheralManagerDidStartAdvertising:(CBPeripheralManager *)peripheral error:(NSError *)error &#123; if (error) &#123; NSLog(@&quot;Error advertising: %@&quot;, [error localizedDescription]); &#125; ...&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>当广告成功后，中心设备可以发现并连接。</p><h3 id="响应中心设备的读写"><a href="#响应中心设备的读写" class="headerlink" title="响应中心设备的读写"></a>响应中心设备的读写</h3><h4 id="处理读取请求"><a href="#处理读取请求" class="headerlink" title="处理读取请求"></a>处理读取请求</h4><p>1.当连接的中心设备读取特征数据时，peripheral manager会调用代理方法 peripheralManager:didReceiveReadRequest: ，如下：</p><pre class="line-numbers language-none"><code class="language-none">- (void)peripheralManager:(CBPeripheralManager *)peripheraldidReceiveReadRequest:(CBATTRequest *)request &#123; if ([request.characteristic.UUID isEqual:myCharacteristic.UUID]) &#123; ... &#125;&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>2.如果特征的uuid是匹配的，下一步就是确保读取的偏移位置并没有超出特征值的边界。如：</p><pre class="line-numbers language-none"><code class="language-none">if (request.offset &gt; myCharacteristic.value.length) &#123; [myPeripheralManager respondToRequest:request withResult:CBATTErrorInvalidOffset]; return;&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>3.假设偏移位置是正确的，这时设置特征值。</p><pre class="line-numbers language-none"><code class="language-none">request.value &#x3D; [myCharacteristic.value subdataWithRange:NSMakeRange(request.offset, myCharacteristic.value.length - request.offset)];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>4.回传request，调用 respondToRequest:withResult: 方法，</p><pre class="line-numbers language-none"><code class="language-none">[myPeripheralManager respondToRequest:request withResult:CBATTErrorSuccess];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>每次收到 peripheralManager:didReceiveReadRequest: 方法时，准确的调用 respondToRequest:withResult: 方法。当uuid没有匹配或者发生其他错误的时候，返回错误信息， 核心库里CBATTError Constants 里定义了各种错误。</p><h4 id="处理写请求"><a href="#处理写请求" class="headerlink" title="处理写请求"></a>处理写请求</h4><p>处理读请求也是同样的简单，同理，当收到写请求时，peripheral manager会调用peripheralManager:didReceiveWriteRequests: 方法，利用 myCharacteristic.value &#x3D; request.value;来设置写入的值。在写入特征值时，一定也要考虑请求的偏移属性。</p><p>同理，当写完成后调用 respondToRequest:withResult: 方法来告知中心设备。但是request参数需要传peripheralManager:didReceiveWriteRequests:中的第一个。</p><h3 id="发送更新的特征值到订阅的中心设备"><a href="#发送更新的特征值到订阅的中心设备" class="headerlink" title="发送更新的特征值到订阅的中心设备"></a>发送更新的特征值到订阅的中心设备</h3><p>1.当中心设备要订阅一个特征值时，peripheral manager 会调用代理方法： peripheralManager:central:didSubscribeToCharacteristic:，</p><pre class="line-numbers language-none"><code class="language-none">- (void)peripheralManager:(CBPeripheralManager *)peripheral central:(CBCentral *)central didSubscribeToCharacteristic:(CBCharacteristic *)characteristic &#123; NSLog(@&quot;Central subscribed to characteristic %@&quot;, characteristic); ...&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>2.当订阅的值发生改变时</p><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; fetch the characteristic&#39;s new valueNSData *updatedValue &#x3D; BOOL didSendValue &#x3D; [myPeripheralManager updateValue:updatedValue forCharacteristic:characteristic onSubscribedCentrals:nil];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>如果 onSubscribedCentrals 参数传nil，所有的连接并订阅的中心设备将会收到通知。改方法会返回一个布尔值来表明是否发送成功，如果底层的发送队列已经满了，则会返回NO。当队列有空间并有效时，会调用代理方法 peripheralManagerIsReadyToUpdateSubscribers: 你可以实现该方法调用 updateValue:forCharacteristic:onSubscribedCentrals: 重新发送。</p><p>需要注意的是，取决于特征值数据包大小，有些特征值不一定完全返回，中心设备收到通知后，可用 CBPeripheral 的 readValueForCharacteristic: 方法来读取所有的数据包。</p><p><img src="/158.jpeg" alt="hh1"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> iOS </tag>
+            
+            <tag> 蓝牙 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown简单语法规则</title>
+      <link href="/2018/03/02/markdown-jian-dan-yu-fa-gui-ze/"/>
+      <url>/2018/03/02/markdown-jian-dan-yu-fa-gui-ze/</url>
+      
+        <content type="html"><![CDATA[<h2 id="认识Markdown"><a href="#认识Markdown" class="headerlink" title="认识Markdown"></a>认识Markdown</h2><p>轻量级文本编辑器，优点多多不一一赘述。在Mac 上，推荐应用 <a href="http://25.io/mou/">Mou</a> ，不过，现在这个只支持OS X 10.7 to 10.11，像我的Sierra，还需等待一段时间。<br>(更新：现在我用的是<a href="https://typora.io/">Typora</a>，额~感觉不大想推荐，因为它写了之后只显示最后效果，没有了markdown的语法，修改起来，会麻烦一点。不想折腾还是直接在简书上Markdown吧，哈哈哈)</p><p>PS:写了之后，发现简书上其实有了更全面的，给个<a href="https://www.jianshu.com/p/191d1e21f7ed">传送门</a>。</p><span id="more"></span><h2 id="Markdown的简单语法及范例"><a href="#Markdown的简单语法及范例" class="headerlink" title="Markdown的简单语法及范例"></a>Markdown的简单语法及范例</h2><h3 id="1-一级标题"><a href="#1-一级标题" class="headerlink" title="1. 一级标题"></a>1. 一级标题</h3><p>一个<code>#</code></p><h3 id="2-二级标题"><a href="#2-二级标题" class="headerlink" title="2. 二级标题"></a>2. 二级标题</h3><p> 两个<code>##</code><br> 没错，你已经想到了，每个多一级标题，就多一个”#”，最多6级标题，每个”#”后面，最好多敲一个空格。</p><h3 id="3-无序列表"><a href="#3-无序列表" class="headerlink" title="3. 无序列表"></a>3. 无序列表</h3><p> 文字前直接加 “<code>*</code>“<br> 例子：</p><ul><li>我是无序列表</li><li>我也是无序列表</li></ul><h3 id="4-有序列表"><a href="#4-有序列表" class="headerlink" title="4. 有序列表"></a>4. 有序列表</h3><p> 文字前直接加 “1.” “2.” “3.”<br> 例子：</p><ol><li>我是有序列表</li><li>我也是有序列表</li></ol><h3 id="5-分割线"><a href="#5-分割线" class="headerlink" title="5. 分割线"></a>5. 分割线</h3><p> 三个 <code>***</code><br> 例子：</p><hr><h3 id="6-引入"><a href="#6-引入" class="headerlink" title="6. 引入"></a>6. 引入</h3><p> 文字前直接加 “&gt;”(大于号)<br> 例子：</p><blockquote><p>我是引入的内容</p></blockquote><h3 id="7-插入图片"><a href="#7-插入图片" class="headerlink" title="7. 插入图片"></a>7. 插入图片</h3><p>其实就是超链接前加个<code>!</code><br>例子：<br><code>![我养你啊](http://upload-images.jianshu.io/upload_images/1648750-db628ae15041d78d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)</code> &#x3D;&#x3D;&gt;<br><img src="http://upload-images.jianshu.io/upload_images/1648750-ebaf61e474f854fd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="我养你啊"></p><h3 id="8-插入链接"><a href="#8-插入链接" class="headerlink" title="8. 插入链接"></a>8. 插入链接</h3><p><code> [需要链接的文字](链接地址)</code><br> 例子：<code>[Hiker的博客](https://callmehiker.github.io/)</code>  &#x3D;&#x3D;&gt;  <a href="https://callmehiker.github.io/">Hiker的博客</a></p><h3 id="9-粗体字"><a href="#9-粗体字" class="headerlink" title="9. 粗体字"></a>9. 粗体字</h3><p><code>**需要加粗的文字**（将文字用4个*包裹起来）</code><br> 例子：<strong>我是粗体字</strong></p><h3 id="10-斜体字"><a href="#10-斜体字" class="headerlink" title="10. 斜体字"></a>10. 斜体字</h3><p><code> *需要斜体的文字*（将文字用2个&quot;**&quot;包裹起来）</code><br>例子： <em>我是斜体字</em></p><h3 id="11-代码框-程序员最爱"><a href="#11-代码框-程序员最爱" class="headerlink" title="11. 代码框(程序员最爱)"></a>11. 代码框(程序员最爱)</h3><p> <code>我是代码</code>（将代码用两个&#96;&#96;&#96;包裹起来，符号在键盘左上角，需要在英文输入模式下敲打）</p><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;远程推送注册成功- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken&#123;    &#x2F;&#x2F; Required - 注册 DeviceToken    [self JpushServiceRegisterDeviceToken:deviceToken];&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="12-红色字体"><a href="#12-红色字体" class="headerlink" title="12. 红色字体"></a>12. 红色字体</h3><blockquote><p>用两个 &#96;&#96;包起来</p></blockquote><p>例子 <code>我是红色字体</code></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
