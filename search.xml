@@ -26,11 +26,6 @@
       </tags>
   </entry>
   <entry>
-    <title>page</title>
-    <url>/2023/04/18/hexo/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Markdown简单语法规则</title>
     <url>/2018/03/02/markdown-jian-dan-yu-fa-gui-ze/</url>
     <content><![CDATA[<h2 id="认识Markdown"><a href="#认识Markdown" class="headerlink" title="认识Markdown"></a>认识Markdown</h2><p>轻量级文本编辑器，优点多多不一一赘述。在Mac 上，推荐应用 <a href="http://25.io/mou/">Mou</a> ，不过，现在这个只支持OS X 10.7 to 10.11，像我的Sierra，还需等待一段时间。<br>(更新：现在我用的是<a href="https://typora.io/">Typora</a>，额~感觉不大想推荐，因为它写了之后只显示最后效果，没有了markdown的语法，修改起来，会麻烦一点。不想折腾还是直接在简书上Markdown吧，哈哈哈)</p>
@@ -74,6 +69,11 @@
       <tags>
         <tag>Markdown</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>page</title>
+    <url>/2023/04/18/hexo/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>iOS点语法与下划线</title>
