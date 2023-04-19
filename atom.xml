@@ -70,7 +70,7 @@
     <link href="http://example.com/2022/08/24/ios-lan-ya/"/>
     <id>http://example.com/2022/08/24/ios-lan-ya/</id>
     <published>2022-08-24T10:25:41.000Z</published>
-    <updated>2022-08-26T02:42:22.364Z</updated>
+    <updated>2023-04-19T06:54:16.775Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;关于Core-Bluetooth&quot;&gt;&lt;a href=&quot;#关于Core-Bluetooth&quot; class=&quot;headerlink&quot; title=&quot;关于Core Bluetooth&quot;&gt;&lt;/a&gt;关于Core Bluetooth&lt;/h2&gt;&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;p&gt;Core Bluetooth framework 提供了iOS和Mac app 与蓝牙设备交互的类。例如，你的app可以发现，检测外围蓝牙设备并与之通信。Mac和iOS设备也可以充当蓝牙外围设备，保存数据到其他设备，包括Mac 和 iOS 设备。蓝牙无线技术基于蓝牙4.0规格，Core Bluetooth framework抽象了蓝牙协议栈，隐藏了底层细节，让开发者更容易的开发蓝牙相关的app。&lt;/p&gt;</summary>
